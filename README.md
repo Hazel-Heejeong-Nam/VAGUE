@@ -1,6 +1,6 @@
 # VAGUE: Visual Contexts Clarify Ambiguous Expressions
 
-**Authors**: Heejeong Nam*, Jinwoo Ahn*  
+**Authors**: Heejeong Nam*, Jinwoo Ahn*, Keummin Ka, Jiwan Chung, Youngjae Yu
 **Year**: 2025  
 **arXiv link**: [https://arxiv.org/abs/2411.14137](https://arxiv.org/abs/2411.14137)
 
@@ -10,12 +10,19 @@
 
 ## Dataset Download
 
+
+**VAGUE 1.0 (2024) has been deprecated. Please use our new VAGUE 2.0 (2025 March ~) 😀**
+
 Download the dataset using the following link:  
 [Dataset Link](https://drive.google.com/drive/folders/1GIoMcmN59PqDoczwcrymqnZ6JY4jgf0r?usp=sharing)
 
-**Instructions**:  
-- Place the image data under the directory `data/annotated_images/`  
-- Place the benchmark folders (`vague_benchmark` and `vague_fewshot`) in the appropriate directory  
+| Feature                | ~~VAGUE 1.0~~ (deprecated) | VAGUE 2.0 |
+|------------------------|--------------------------|-----------|
+| **Size**              | 3993                     | 1677      |
+| **Source**            | [VCR](https://visualcommonsense.com/) | [VCR](https://visualcommonsense.com/), [Ego4D](https://ego4d-data.org/) |
+| **Verification Method** | Model-based             | Human Rating & Filtering |
+| **Human Performance**  | ❌                       | ✅        |
+
 
 ---
 
@@ -37,17 +44,6 @@ export VLLM_VERSION=0.6.1.post1
 export PYTHON_VERSION=310
 pip install https://github.com/vllm-project/vllm/releases/download/v${VLLM_VERSION}/vllm-${VLLM_VERSION}+cu118-cp${PYTHON_VERSION}-cp${PYTHON_VERSION}-manylinux1_x86_64.whl --extra-index-url https://download.pytorch.org/whl/cu118
 
-```
-### Prerequisite
-To use **share GPT**, install `internLM_XComposer` under the `src` directory.
-
-### Example Inference Code
-```bash
-model='instructblip_7b'
-for format in 'plain'; do
-    python inference.py --answer_type 'mcq' --format $format --model ${model} --device 'cuda:2'
-    python inference.py --answer_type 'da' --format $format --model ${model} --device 'cuda:2'
-done
 ```
 
 ## dataset example
