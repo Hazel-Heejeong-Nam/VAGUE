@@ -1,6 +1,6 @@
 # VAGUE: Visual Contexts Clarify Ambiguous Expressions
 
-**Authors**: Heejeong Nam*, Jinwoo Ahn*, Keummin Ka, Jiwan Chung, Youngjae Yu
+**Authors**: Heejeong Nam*, Jinwoo Ahn*, Keummin Ka, Jiwan Chung, Youngjae Yu  
 **Year**: 2025  
 **arXiv link**: [https://arxiv.org/abs/2411.14137](https://arxiv.org/abs/2411.14137)
 
