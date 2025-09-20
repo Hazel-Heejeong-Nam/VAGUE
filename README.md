@@ -1,8 +1,8 @@
 # [ICCV 2025] VAGUE: Visual Contexts Clarify Ambiguous Expressions
 
 **Authors**: Heejeong Nam*, Jinwoo Ahn*, Keummin Ka, Jiwan Chung, Youngjae Yu  
-**Year**: 2025  
-**link**: [https://arxiv.org/abs/2411.14137](https://arxiv.org/abs/2411.14137)
+**Project Page**: [https://hazel-heejeong-nam.github.io/vague/](https://hazel-heejeong-nam.github.io/vague/)
+**Paper Link**: [https://arxiv.org/abs/2411.14137](https://arxiv.org/abs/2411.14137)
 
 ![Main Figure](figs/main.jpg)
 
@@ -13,7 +13,10 @@
 
 **VAGUE 1.0 (2024) has been deprecated. Please use our new VAGUE 2.0 (2025 March ~) 😀**
 
-Download the dataset using the following link:  
+🤗 HuggingFace Dataset : 
+[HuggingFace Dataset Link](https://huggingface.co/datasets/HazelNam/vague-bench)
+
+Also download the dataset using the following link:  
 [Dataset Link](https://drive.google.com/drive/folders/1GIoMcmN59PqDoczwcrymqnZ6JY4jgf0r?usp=sharing)
 
 | Feature                | ~~VAGUE 1.0~~ (deprecated) | VAGUE 2.0 |
